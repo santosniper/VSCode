@@ -16,8 +16,7 @@ header{
     border: solid blueviolet 3px;
     border-radius: 5px;
     box-sizing: border-box;
-    grid-column: 1;
-    grid-row: 2;
+    height: 70px;
     
 }
 
@@ -25,8 +24,6 @@ header{
     background-color: #D4CD6A;
     border: solid yellow 3px;
     width: 100%;
-    grid-column: 1;
-    grid-row: 1;
     grid-column-start: 1;
     grid-column-end: span 2;
 }
@@ -35,9 +32,6 @@ main{
     background-color: #AAA739;
     border: solid yellow 3px;
     border-radius: 5px;
-    height: 100%;
-    grid-column: 2;
-    grid-row: 2;
     
    
 }

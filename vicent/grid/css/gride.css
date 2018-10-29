@@ -8,7 +8,7 @@ header{
     border: solid yellow 3px;
     padding-bottom: 20px;
     border-radius: 5px;
-    position: relative;
+
     
 }
 
@@ -16,15 +16,15 @@ nav{
     background-color: #4F2C73;
     border: solid blueviolet 3px;
     border-radius: 5px;
-    position: relative;
-    box-sizing: border-box;
-    float: left;
+    grid-column: 1;
+    height: 90px;
+   
+
    
     
 }
 section{
     background-color: aquamarine;
-    width: 50%;
     float: left;
     border: solid blue 3px;
 }
@@ -34,9 +34,8 @@ main{
     background-color: #AAA739;
     border: solid yellow 3px;
     border-radius: 5px;
-    height: 50%;
-    position: relative;
-    display: flow-root;
+
+
 }
 
 footer{
@@ -45,9 +44,21 @@ footer{
     height: 100px;
     width: 100%;
     border-radius: 5px;
-    clear: both;
+
     
 }
 *{
     box-sizing: border-box;
+}
+
+.grid00{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr; 
+}
+
+.grid01{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
 }
