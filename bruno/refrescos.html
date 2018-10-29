@@ -1,0 +1,184 @@
+<!Doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>DAW</title>    
+    <link rel="stylesheet"  href="css/refrescos.css" />
+     
+</head>
+<body onload="miFuncion();">
+    <h1>Máquina de refrescos</h1>
+
+    <table>
+        <tr id="cabeza">
+            <th>Nº Producto</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+        </tr>
+
+        <tr id="cola">
+            <td>01</td>
+            <td>Coca-Cola</td>
+            <td>1.50€</td>
+        </tr>
+
+        <tr id="fantaL">
+            <td>02</td>
+            <td>Fanta Limón</td>
+            <td>1.50€</td>
+        </tr>
+
+        <tr id="fantaN">
+            <td>03</td>
+            <td>Fanta Naranja</td>
+            <td>1.50€</td>
+        </tr>
+
+        <tr id="agua">
+            <td>04</td>
+            <td>Agua 1.5L</td>
+            <td>0.80€</td>
+        </tr>
+
+        <tr id="agua">
+            <td>05</td>
+            <td>Agua 0.5L</td>
+            <td>0.5€</td>
+        </tr>
+
+        <tr id="pepsi">
+            <td>06</td>
+            <td>Pepsi</td>
+            <td>1€</td>
+        </tr>
+
+        <tr id="spr">
+            <td>07</td>
+            <td>Sprite</td>
+            <td>2€</td>
+        </tr>
+
+
+        
+    </table>
+
+    <script>
+        function miFuncion() {
+           var n = prompt("¿Qué quieres tomar?")
+
+           if(isNaN(n)){
+               alert("Debes introducir el código numérico")
+           }else if(n==1){
+               var x = prompt("Introduce su importe");
+               if(isNaN(x)){
+                   alert("Debe introducir valores numéricos");
+               }else{
+                   var z = parseFloat(x)-parseFloat(1.50);
+                   if(z<0){
+                       alert("Dinero insuficiente");
+                   }else if(z==0){
+                       alert("Gracias por su compra!");
+                   }else{
+                       alert("recoja su cambio de "+z+"€ y hasta pronto!");
+                   }
+               }
+           }else if(n==2){
+            var x = prompt("Introduce su importe");
+            if(isNaN(x)){
+                   alert("Debe introducir valores numéricos");
+               }else{
+                   var z = parseFloat(x)-parseFloat(1.50);
+                   if(z<0){
+                    alert("Dinero insuficiente");
+                   }else if(z==0){
+                       alert("Gracias por su compra!");
+                   }else{
+                       alert("recoja su cambio de "+z+"€ y hasta pronto!");
+                   }
+           }
+        }else if(n==3){
+            var x = prompt("Introduce su importe");
+            if(isNaN(x)){
+                   alert("Debe introducir valores numéricos");
+               }else{
+                   var z = parseFloat(x)-parseFloat(1.50);
+                   if(z<0){
+                    alert("Dinero insuficiente");
+                   }else if(z==0){
+                       alert("Gracias por su compra!");
+                   }else{
+                       alert("recoja su cambio de "+z+"€ y hasta pronto!");
+                   }
+                }
+            }else if(n==4){
+            var x = prompt("Introduce su importe");
+            if(isNaN(x)){
+                   alert("Debe introducir valores numéricos");
+               }else{
+                   var z = parseFloat(x)-parseFloat(0.80);
+                   if(z<0){
+                    alert("Dinero insuficiente");
+                   }else if(z==0){
+                       alert("Gracias por su compra!");
+                   }else{
+                       alert("recoja su cambio de "+z+"€ y hasta pronto!");
+                   }
+                }
+            }else if(n==5){
+            var x = prompt("Introduce su importe");
+            if(isNaN(x)){
+                   alert("Debe introducir valores numéricos");
+               }else{
+                   var z = parseFloat(x)-parseFloat(0.50);
+                   if(z<0){
+                    alert("Dinero insuficiente");
+                   }else if(z==0){
+                       alert("Gracias por su compra!");
+                   }else{
+                       alert("recoja su cambio de "+z+"€ y hasta pronto!");
+                   }
+                }
+            }else if(n==6){
+            var x = prompt("Introduce su importe");
+            if(isNaN(x)){
+                   alert("Debe introducir valores numéricos");
+               }else{
+                   var z = parseFloat(x)-parseFloat(1);
+                   if(z<0){
+                    alert("Dinero insuficiente");
+                   }else if(z==0){
+                       alert("Gracias por su compra!");
+                   }else{
+                       alert("recoja su cambio de "+z+"€ y hasta pronto!");
+                   }
+                }
+            }else if(n==7){
+            var x = prompt("Introduce su importe");
+            if(isNaN(x)){
+                   alert("Debe introducir valores numéricos");
+               }else{
+                   var z = parseFloat(x)-parseFloat(2);
+                   if(z<0){
+                    alert("Dinero insuficiente");
+                   }else if(z==0){
+                       alert("Gracias por su compra!");
+                   }else{
+                       alert("recoja su cambio de "+z+"€ y hasta pronto!");
+                   }
+                }
+            }else if(n>7||n<1){
+                alert("Código no disponible.")
+            }
+        }
+</script>
+<br>
+<div class="botones">
+        <a href="index.html" class="button">Principal</a>
+        <a href="calculadora.html" class="button">Calculadora</a>        
+</div>
+
+   
+ 
+   
+</body>
+</html>

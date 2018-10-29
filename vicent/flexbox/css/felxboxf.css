@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    flex-flow: row wrap;
+    display: flex;
+}
+header{
+    background-color: rgb(255, 238, 187);
+    border: solid 1px rgb(255, 255, 0);
+    border-radius: 5px;
+}
+
+nav{
+    background-color: rgb(204, 204, 255);
+    border: solid 1px rgb(136, 136, 187);
+    border-radius: 5px;
+    height: 20%;
+    flex: 1 5 10%;
+}
+
+
+main{
+    background-color: rgb(221, 221, 136);
+    border: solid 1px rgb(204, 204, 51);
+    border-radius: 5px;
+    flex: 0 0 90%;
+
+}
+#sec3{
+    background-color: rgb(127, 255, 212);
+    border: solid 1px black;
+    border-radius: 5px;
+    flex: 0 0 80%;
+}
+
+section{
+    background-color: rgb(165, 42, 42);
+    border: solid 1px black;
+    border-radius: 5px;
+    flex: 0 0 20%;
+}
+
+footer{
+    background-color: rgb(255, 238, 187);
+    border: solid 1px rgb(255, 255, 0);
+    border-radius: 5px;
+}
+#text1{
+    font-size: 1em;
+}
+#text2{
+    font-size: 2em;
+}

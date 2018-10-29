@@ -1,0 +1,52 @@
+body{
+    background-color: grey;
+   
+    margin: auto;
+}
+header{
+    background-color: #D4CD6A;
+    border: solid yellow 3px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+#nav1{
+    background-color: #4F2C73;
+    border: solid blueviolet 3px;
+    width: 10%;
+    border-radius: 5px;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    
+}
+
+#nav2{
+    background-color: #D4CD6A;
+    border: solid yellow 3px;
+    width: 100%;
+}
+
+main{
+    background-color: #AAA739;
+    border: solid yellow 3px;
+    border-radius: 5px;
+    height: 50%;
+    width: 89.5%;
+    position: relative;
+    float: right;
+}
+
+footer{
+    background-color: #D4CD6A;
+    border: solid yellow 3px;
+    height: 100px;
+    width: 100%;
+    border-radius: 5px;
+    clear: both;
+    
+}
+*{
+    box-sizing: border-box;
+}

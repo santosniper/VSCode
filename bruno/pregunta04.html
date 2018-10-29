@@ -1,0 +1,89 @@
+<!Doctype html>
+<html lang="es"    >
+<head>
+    <meta charset="utf-8" />
+    <title>Plantilla</title>    
+    <link rel="stylesheet"  href="css/css.css" />
+    
+    
+</head>
+<body>
+        
+    <header>
+        <h1>Pregunta03</h1>        
+    </header>
+    <div id="content">
+        <script>
+           
+            var aleatorio = Math.floor(Math.round(Math.random()*9)+1);
+            var ordinales =["primera","segunda","tercera","cuarta","quinta","sexta","septima","octava","novena","decima"];
+            var lista =["primer","segundo","tercer","cuarto","quinto","sexto","septimo","octavo","noveno","decimo"];
+            var intento=[];
+
+            var c=0;
+            var d=0;
+            var i =10;
+
+
+
+            do{
+                var n = prompt("Introduce el numero que creas entre 1 y 10.("+i+" intentos)");
+                if(n==isNaN||n>10||n<0){
+                    document.write("Escribe un numero entero entre 0 y 10.<br>");
+                }else if(n==aleatorio){
+                    
+                    document.write("Has encontrado el numero, era el "+aleatorio+"<br>");
+            }else if(n>aleatorio){
+                document.write("Has introducido en numero "+n+" el numero que buscas en más bajo.<br>");
+            }else if(n<aleatorio){
+               
+                document.write("Has introducido en numero "+n+" el numero que buscas en más alto.<br>");
+            }
+            intento.push(n);
+            c++;
+            i--;
+
+            }while(n!=aleatorio&&c<10);
+
+            if(c>=10){
+                alert("Has llegado al limite de intentos");
+            }else{
+                document.write("Lo has conseguido a la "+ordinales[c-1]+" vez.");
+
+            document.write("<h1>Lista de intentos</h1><br>");
+
+            while(d < c){
+          document.write("<li>"+lista[d]+" intento: "+intento[d]+"<br>");
+          d++;
+        }
+
+            }
+
+            
+
+             
+             
+
+          
+        
+       
+
+           
+            
+       
+        
+        </script>
+        
+    </div>
+    <div id="lateral">
+       
+        
+        
+    </div>
+        
+    <div id="footer">
+       
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,5 @@
+meses.length(12);
+meses.push("Diciembre");
+meses.unshift("Enero");
+mese.pop(); //borra final array.
+meses.shift(); //borra principio del array.

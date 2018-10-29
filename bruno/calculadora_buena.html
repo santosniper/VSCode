@@ -1,0 +1,51 @@
+<!Doctype html>
+<html lang="es"    >
+<head>
+    <meta charset="utf-8" />
+    <title>DAW</title>    
+    <link rel="stylesheet"  href="css/css.css" />
+    <script>
+        var n1 = prompt("Introduce el primer número");
+        if(isNaN(n1)){
+            document.write("Debes escribir un número");
+            
+        }else{
+            var n2 = prompt("Introduce el segundo número");
+            if(isNaN(n2)){
+                document.write("Debes escribir un número");
+                
+            }else{
+                var op = prompt("Introduce la operacion (+,-,*,/)");
+                if(op=="+"){
+                    var res = parseInt(n1)+parseInt(n2);
+                    document.write("El resultado de la operación ("+op+") de los números " + n1 + " y " + n2 + " es " + res);
+
+                }else if(op=="-"){
+                    var res = parseInt(n1)-parseInt(n2);
+                    document.write("El resultado de la operación ("+op+") de los números " + n1 + " y " + n2 + " es " + res);
+                }else if(op=="*"){
+                    var res = parseInt(n1)*parseInt(n2);
+                    document.write("El resultado de la operación ("+op+") de los números " + n1 + " y " + n2 + " es " + res);
+                }else if(op=="/"){
+                    var res = parseInt(n1)/parseInt(n2);
+                    document.write("El resultado de la operación ("+op+") de los números " + n1 + " y " + n2 + " es " + res);
+                }else{
+                    document.write("Introduce un operando válido");
+                }
+            }
+        }
+     
+    </script>
+    
+</head>
+<body>
+    <header>
+        
+    </header>
+    <footer>
+
+        
+    </footer>
+    
+</body>
+</html>

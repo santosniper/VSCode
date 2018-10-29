@@ -1,0 +1,74 @@
+<!Doctype html>
+<html lang="es"    >
+<head>
+    <meta charset="utf-8" />
+    <title>Plantilla</title>    
+    <link rel="stylesheet"  href="css/css.css" />
+    <script>
+        
+    </script>
+    
+</head>
+<body>
+        
+    <header>
+        <h1>Mi página web</h1>        
+    </header>
+    <div id="content">
+        <section>
+            <article>
+                <h2>Color-Switch</h2>
+                <script>
+                    var nombre=prompt("Introduce tu nombre:").toLowerCase();
+                    
+                       switch(nombre){
+                           default:{
+                               document.write("Tu nombre no esta en la BBDD.");
+                               break;
+                           }
+                    case"hector":
+                    {
+
+                       document.getElementById("content").style.backgroundColor="red";
+                       document.write("Hola "+" "+nombre);
+                       break;
+                    }case"ernesto":
+                    {
+
+                       document.getElementById("content").style.backgroundColor="blue";
+                       document.write("Hola "+" "+nombre);
+                       break;
+                    }case"bruno":
+                    {
+
+                       document.getElementById("content").style.backgroundColor="yellow";
+                       document.write("Hola "+" "+nombre);
+                       break;
+                    }case"pedro":
+                    {
+
+                       document.getElementById("content").style.backgroundColor="brown";
+                       document.write("Hola "+" "+nombre);
+                       break;
+                    }
+                }
+                </script>
+             
+               
+            </article>
+        </section>
+            
+        
+    </div>
+    <div id="lateral">
+        publicidad y gadgets
+        
+        
+    </div>
+        
+    <div id="footer">
+       <p>Pié de página.</p>
+    </div>
+    
+</body>
+</html>

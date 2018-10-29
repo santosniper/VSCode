@@ -1,0 +1,68 @@
+h1{
+    color: white;
+    background-color:black;
+    text-align: center;
+   text-decoration: underline;
+
+ }
+
+table{
+    background-color: black;
+    color: black;
+    border: black 5px solid;
+    border-collapse: separate;
+    text-align: center;
+    border-spacing: 10px 5px;
+    font-size: 40px;
+   
+}
+#cola{
+    background-color: #FF3535;
+}
+
+#fantaL{
+    background-color: #E1FF35;
+}
+
+#fantaN{
+    background-color: #FF9735;
+}
+
+#agua{
+    background-color: #359CFF;
+}
+
+#pepsi{
+    background-color: #3540FF;
+}
+body{
+    background-image: url(https://images.ssstatic.com/cola-sprite-fanta-pepsi-botellas-y-lata-12577661z0-23341567.png);
+}
+
+#cabeza{
+    color: white;
+}
+
+#spr{
+   background-color: #23A124;
+}
+a {
+    background-color: black;
+    color: white;
+    border: 2px solid red;
+    height: 50px;
+    width: 120px;
+}
+
+a:hover {
+    background-color: #555555;
+    color: white;
+}
+
+a:active {
+  background-color: #555555;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
