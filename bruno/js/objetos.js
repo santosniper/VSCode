@@ -4,14 +4,14 @@
         
         numeros[i]=parseInt(Math.random()*100);
         for(var s=0;s<100;s++){
-            
+          
 
         }
        
-        
+        numeros.sort()
 
     }
-    console.log(numeros.sort())
+    
     document.write('<table border=3px>');
     var z=0;
 
