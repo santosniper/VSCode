@@ -2,15 +2,14 @@
     box-sizing: border-box;
 }
 header{
-    background: rgb(211, 0, 0);
+    background-color: rgb(211,0,0);
     border: solid 1px;
     border-radius: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:  #14445B;
     font-size: 24px;
-    color: rgb(20, 68, 91);
-    align-self: start;
-    min-height: 80px;
     text-transform: uppercase;
+    text-align: center;
     
 }
 
@@ -19,8 +18,8 @@ body{
 }
 
 nav{
-    background:  white;
-    border: solid 3px;
+    background-color: rgb(255, 255, 255);
+    border: solid 3px ;
     border-radius: 5px;
     
     
@@ -32,15 +31,18 @@ main{
     border-radius: 5px;
 }
 
-nav2{
-    background:  white;
+.nav2{
+    background-color: aquamarine;
+    bottom: 0px;
     border: solid 3px;
     border-radius: 5px;
 }
 
 footer{
-    background: black;
-    color: rgb(236, 236, 236);
+    background-color: rgb(0, 0, 0);
+    border: solid 1px;
+    border-radius: 5px;
+    color: rgb(236,236,236);
 }
 .grid{
     display: grid;
@@ -56,17 +58,34 @@ footer{
 }
 
 .sec1{
-    background: red;
-    margin-top: 20%;
-    min-height: 50px;
-    border: solid 3px;
+    background-color: rgb(236,236,236) ;
+    border: solid 1px black;
     border-radius: 5px;
+    margin-top: 10%;
+    min-height: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    
 }
 
 .sec2{
-    background: blue;
+    background-color: rgb(236,236,236) ;
+    border: solid 1px black;
+    border-radius: 5px;
     min-height: 50px;
     margin-top: 20%;
-    border: solid 3px;
-    border-radius: 5px;
+    margin-bottom: 15%;
+   
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:  rgb(20, 68, 91);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:  #686868;
+    font-size: 12px;
 }
