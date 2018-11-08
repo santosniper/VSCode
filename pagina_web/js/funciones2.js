@@ -22,3 +22,17 @@ boton3.onmouseleave = function(e){
     alert("Gracias por tu colaboración");
 }
 
+var boton = document.getElementById("cruz");
+
+
+boton.addEventListener("click", cerradv, false);
+
+function cerradv(){
+    
+    $("#superpuesto").remove();
+
+}
+
+
+
+
