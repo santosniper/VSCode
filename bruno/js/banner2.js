@@ -60,14 +60,7 @@ im4.addEventListener("click", sold4, false);
 
 function sold4(){
     
-    $("#im").replaceWith("<img src='img/965334.png'>");
+    $("#im4").replaceWith("<img src='img/965334.png'>");
 }
 
-var botgoogle = document.getElementById("botgoogle");
 
-botgoogle.addEventListener("click", destacar1, false);
-function destacar1(){
-    $(".guguel").addClass("destacada");
-    
-   
-}

@@ -42,9 +42,18 @@ header{
 }
 
 table{
-    border: 7px solid black;
+    border: 7px dashed aqua;
+    }
+
+td{
+    padding: 50px;
 }
-a {
+
+
+
+
+
+.botones {
     background-color: black;
     color: white;
     border: 2px solid red;
@@ -52,45 +61,20 @@ a {
     width: 120px;
 }
 
-a:hover {
+.botones:hover {
     background-color: #555555;
     color: white;
 }
 
-a:active {
+.botones:active {
   background-color: #555555;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
-#superpuesto{
-    border: solid black 5px;
-    min-height: 200px;
-    background-color:rgb(241 , 112, 92);
-    position: relative;
-    height: 50%;
-    width: 50%;
-    border-radius: 3%;
-    text-align: center;
-    left: 25%;
-    opacity: 0.8;
-    
+.primero{
+    float: left;
+    padding: 100px;
 }
 
-.botones{
-    position: absolute;
-}
 
-#cruz{
-    background-color: transparent;
-    right: 0px;
-}
-
-img{
-    max-width: 150px;;
-}
-
-.destacada{
-    background: blue;
-    color: white;
-}
