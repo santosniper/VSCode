@@ -27,7 +27,6 @@ header{
     height: 100%;
     margin-top: 2%;
     margin-left: 71%;
-    position: absolute;
 
 }
 
@@ -64,3 +63,29 @@ a:active {
   transform: translateY(4px);
 }
 
+#superpuesto{
+    border: solid black 5px;
+    min-height: 200px;
+    background-color:rgb(241 , 112, 92);
+    position: relative;
+    height: 50%;
+    width: 50%;
+    border-radius: 3%;
+    text-align: center;
+    left: 25%;
+    opacity: 0.8;
+    
+}
+
+.botones{
+    position: absolute;
+}
+
+#cruz{
+    background-color: transparent;
+    right: 0px;
+}
+
+img{
+    max-width: 150px;;
+}
