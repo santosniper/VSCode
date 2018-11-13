@@ -81,7 +81,7 @@ nav:hover .mainmenu{
   .submenu {
     overflow: hidden;
     max-height: 0;
-    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
   }
 
   #pmenu{
@@ -192,7 +192,7 @@ footer{
       .submenu {
         overflow: hidden;
         max-height: 0;
-        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
       }
 
       #pmenu{
@@ -314,7 +314,7 @@ footer{
       .submenu {
         overflow: hidden;
         max-height: 0;
-        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
       }
 
       #pmenu{
