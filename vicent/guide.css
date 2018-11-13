@@ -74,6 +74,82 @@ p{
     font-size: 12px;
 }
 @media screen and (min-width: 0px) and (max-width: 577px){
+
+    .mainmenu{
+        display: none;
+    }
+
+    nav:hover .mainmenu{
+        display: block;
+        width: auto;
+
+    }
+
+    .mainmenu, .submenu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      /* make ALL links (main and submenu) have padding and background color */
+      .mainmenu a {
+        display: block;
+        background-color: rgb(211,0,0);
+        
+        text-decoration: none;
+        padding: 10px;
+        color: #000;
+      }
+      
+      /* add hover behaviour */
+      .mainmenu a:hover {
+        background-color: rgb(0,0,0);
+        color: white;
+      }
+      
+      
+      /* when hovering over a .mainmenu item,
+        display the submenu inside it.
+        we're changing the submenu's max-height from 0 to 200px;
+      */
+      
+      .mainmenu li:hover .submenu {
+        display: block;
+        max-height: 200px;
+      }
+      
+      /*
+        we now overwrite the background-color for .submenu links only.
+        CSS reads down the page, so code at the bottom will overwrite the code at the top.
+      */
+      
+      .submenu a {
+        background-color: rgb(0,21,211);;
+      }
+      
+      /* hover behaviour for links inside .submenu */
+      .submenu a:hover {
+        background-color: rgb(0,0,0);
+        color: white;
+      }
+      
+      /* this is the initial state of all submenus.
+        we set it to max-height: 0, and hide the overflowed content.
+      */
+      .submenu {
+        overflow: hidden;
+        max-height: 0;
+        -webkit-transition: all 0.5s ease-out;
+      }
+
+      #pmenu{
+          text-align: center;
+          color: white;
+          background-color: #000;
+          margin: 0;
+          padding: 0;
+      }
+
     header{
         position: sticky;
         top: 0px;
@@ -117,18 +193,85 @@ p{
 }
 
 @media screen and (min-width: 578px) and (max-width: 767px){
-    #listado{
+    .mainmenu{
         display: none;
     }
-    li ul li{
+
+    nav:hover .mainmenu{
         display: block;
+
     }
-    nav:hover #listado{
+
+    .mainmenu, .submenu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      /* make ALL links (main and submenu) have padding and background color */
+      .mainmenu a {
         display: block;
-    }
+        background-color: rgb(211,0,0);
+        
+        text-decoration: none;
+        padding: 10px;
+        color: #000;
+      }
+      
+      /* add hover behaviour */
+      .mainmenu a:hover {
+        background-color: rgb(0,0,0);
+        color: white;
+      }
+      
+      
+      /* when hovering over a .mainmenu item,
+        display the submenu inside it.
+        we're changing the submenu's max-height from 0 to 200px;
+      */
+      
+      .mainmenu li:hover .submenu {
+        display: block;
+        max-height: 200px;
+      }
+      
+      /*
+        we now overwrite the background-color for .submenu links only.
+        CSS reads down the page, so code at the bottom will overwrite the code at the top.
+      */
+      
+      .submenu a {
+        background-color: rgb(0,21,211);;
+      }
+      
+      /* hover behaviour for links inside .submenu */
+      .submenu a:hover {
+        background-color: rgb(0,0,0);
+        color: white;
+      }
+      
+      /* this is the initial state of all submenus.
+        we set it to max-height: 0, and hide the overflowed content.
+      */
+      .submenu {
+        overflow: hidden;
+        max-height: 0;
+        -webkit-transition: all 0.5s ease-out;
+      }
+
+      #pmenu{
+          text-align: center;
+          color: white;
+          background-color: #000;
+          margin: 0;
+          padding: 0;
+      }
+  
+
+  
     header{
         grid-row: 1/2;
-        grid-column: 2/4;
+        grid-column: 1/4;
         min-height: 55px;
         position: sticky;
         top:0;
@@ -136,10 +279,15 @@ p{
     nav{
         grid-row: 1/2;
         grid-column: 1/2;
-        min-height: 55px;
+        height: 55px;
         position: sticky;
         top:0;
     }
+
+
+
+
+    
     .grid{
         display: grid;
         grid-template-columns: 125px 12fr auto;
@@ -157,39 +305,94 @@ p{
         max-width: 150px;
         grid-row: 2/4;
     }
-    #listado{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    #listado2{
-        display:none;
-    }
+   
+    
+
+    
+
+    
+ 
+
     
     
 }
 
 @media screen and (min-width: 768px){
-    #listado{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+    
+    .mainmenu{
+        display: none;
     }
-    li{
-        display: inline-block;
-        margin-right: 1px;
-    }
-    li ul{
-        display:none;
-    }
-    li ul li{
+
+    nav:hover .mainmenu{
         display: block;
+
     }
-    li ul li a{
-        width: auto;
-        min-width: 125px;
-        padding: 0 20px;
-    }
+
+    .mainmenu, .submenu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      /* make ALL links (main and submenu) have padding and background color */
+      .mainmenu a {
+        display: block;
+        background-color: rgb(211,0,0);
+        
+        text-decoration: none;
+        padding: 10px;
+        color: #000;
+      }
+      
+      /* add hover behaviour */
+      .mainmenu a:hover {
+        background-color: rgb(0,0,0);
+        color: white;
+      }
+      
+      
+      /* when hovering over a .mainmenu item,
+        display the submenu inside it.
+        we're changing the submenu's max-height from 0 to 200px;
+      */
+      
+      .mainmenu li:hover .submenu {
+        display: block;
+        max-height: 200px;
+      }
+      
+      /*
+        we now overwrite the background-color for .submenu links only.
+        CSS reads down the page, so code at the bottom will overwrite the code at the top.
+      */
+      
+      .submenu a {
+        background-color: rgb(0,21,211);;
+      }
+      
+      /* hover behaviour for links inside .submenu */
+      .submenu a:hover {
+        background-color: rgb(0,0,0);
+        color: white;
+      }
+      
+      /* this is the initial state of all submenus.
+        we set it to max-height: 0, and hide the overflowed content.
+      */
+      .submenu {
+        overflow: hidden;
+        max-height: 0;
+        -webkit-transition: all 0.5s ease-out;
+      }
+
+      #pmenu{
+          text-align: center;
+          color: white;
+          background-color: #000;
+          margin: 0;
+          padding: 0;
+      }    
+   
     header{
         grid-row: 1/2;
         grid-column: 1/4;
