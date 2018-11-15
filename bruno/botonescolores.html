@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Plantilla</title>    
     <link rel="stylesheet"  href="css/botonescolores.css" />
-  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
 </head>
 <body>
@@ -19,42 +19,65 @@
              <div class="primero">
                     <table>
                         <tr>
-                            <td class="video">Video1</td>
-                            <td class="video"></a>Video2</td>
+                            <td><a class="claseV1">Video1</a></td>
+                            <td><a class="claseV1">Video2</a></td>
+                            <td><a class="claseG1">Gif1</a></td>
                         </tr>
                         <tr>
-                            <td>Foto1</td>
-                            <td>Foto2</td>
+                            <td><a class="claseF1">Foto1</a></td>
+                            <td><a class="claseF1">Foto2</a></td>
+                            <td><a class="claseG1">Gif2</a></td>
                         </tr>
                         <tr>
-                                <td>Foto3</td>
-                                <td>Video3</td>
-                            </tr>
+                            <td><a class="claseF1">Foto3</a></td>
+                            <td><a class="claseV1">Video3</a></td>
+                            <td><a class="claseG1">Gif3</a></td>
+                        </tr>
+                
                         
                     </table>
 
-                    <button class="botones">Videos</button>
-                    <button class="botones">Fotos</button>
+                    <div>
+                            <button class="botones" id="video1">Videos</button>
+                            <button class="botones" id="foto1">Fotos</button>
+                            <button class="botones" id="gif1">Gif</button>
+
+
+                    </div>
+                  
+                            
+              
+
+                    
                     </div>
                     <div class="segundo">
                             <table>
                                     <tr>
-                                        <td>Video1</td>
-                                        <td></a>Video2</td>
+                                        <td class="claseV2"><a>Video1</a></td>
+                                        <td class="claseV2"><a>Video2</a></td>
+                                        <td class="claseG2"><a>Gif1</a></td>
                                     </tr>
                                     <tr>
-                                        <td>Foto1</td>
-                                        <td>Foto2</td>
+                                        <td class="claseF2"><a>Foto1</a></td>
+                                        <td class="claseF2"><a>Foto2</a></td>
+                                        <td class="claseG2"><a>Gif2</a></td>
                                     </tr>
                                     <tr>
-                                            <td>Foto3</td>
-                                            <td>Video3</td>
+                                            <td class="claseF2"><a>Foto3</a></td>
+                                            <td class="claseV2"><a>Video3</a></td>
+                                            <td class="claseG2"><a>Gif3</a></td>
                                         </tr>
                                     
                                 </table>
 
-                                Videos<input type="checkbox">
-                                Fotos<input type="checkbox">
+                                
+                                        Videos<input type="radio" name="radios" id="video2"><br>
+                                        Fotos<input type="radio" name="radios" id="foto2"><br>
+                                        Gif<input type="radio" name="radios" id="gif2">
+
+                              
+
+                                
 
 
                     </div>

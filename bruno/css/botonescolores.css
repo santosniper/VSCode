@@ -74,7 +74,18 @@ td{
 
 .primero{
     float: left;
-    padding: 100px;
+   
+    position: relative;
+    max-width: 150px;
+}
+.segundo{
+    float: right;
+    
+    position: relative;
+    max-width: 150px;
 }
 
-
+.c1{
+    color: white;
+    background-color: blueviolet;
+}
