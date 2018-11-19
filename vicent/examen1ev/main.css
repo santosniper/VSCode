@@ -132,9 +132,7 @@ footer{
 .grid2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
-    
-       
+    justify-items: center;     
 }
 
 
@@ -224,6 +222,8 @@ header{
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     padding: 0px;
+    justify-items: normal;
+    
 }
 
 header{
