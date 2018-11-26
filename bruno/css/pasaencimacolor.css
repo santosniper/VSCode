@@ -1,0 +1,111 @@
+body{
+    background-color: #2D882D;
+
+}
+
+header{
+    text-align: center;
+    background-color: #55AA55;
+    color: black;
+    margin-top: 0%;
+}
+
+#content{
+    color: black;
+    text-align: justify;
+    background-color: #116611;
+    width: 70%;
+    margin-left: 0px;
+    margin-top: 2%;
+    height: 100%;
+    position: absolute;
+}
+
+#lateral{
+    background-color: #88CC88;
+    width: 30%;
+    height: 100%;
+    margin-top: 2%;
+    margin-left: 71%;
+
+}
+
+
+#footer {
+	width: 100%;
+	height: 10%;
+	position: fixed;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    
+}
+
+table{
+    border: 7px solid black;
+}
+a {
+    background-color: black;
+    color: white;
+    border: 2px solid red;
+    height: 50px;
+    width: 120px;
+}
+
+a:hover {
+    background-color: #555555;
+    color: white;
+}
+
+a:active {
+  background-color: #555555;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#superpuesto{
+    border: solid black 5px;
+    min-height: 200px;
+    background-color:rgb(241 , 112, 92);
+    position: relative;
+    height: 50%;
+    width: 50%;
+    border-radius: 3%;
+    text-align: center;
+    left: 25%;
+    opacity: 0.8;
+    
+}
+
+.botones{
+    position: absolute;
+}
+
+#cruz{
+    background-color: transparent;
+    right: 0px;
+}
+
+img{
+    max-width: 150px;;
+}
+
+.destacada{
+    background: blue;
+    color: white;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+
+}
+
+button{
+    width: 100%;
+    height: 80px;
+}
+
+.adios{
+    display: none;
+}
