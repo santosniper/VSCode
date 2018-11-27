@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<a href="http://www.w3schools.com/HTML/html5_video.asp" target="blank">Mas información sobre etiqueta video</a> <br>
+		<video controls="" width="360" height="240">
+			<source src="videos/recetapollo.mp4" type="video/mp4" />
+			<source src="videos/recetapollo.ogv" type="video/ogg; codecs='theora, vorbis'"/>
+			<source src="videos/recetapollo.webm" type="video/webm"/>
+			<object type="application/x-shockwave-flash" data="player_flv_maxi.swf" height="240" width="360"> 
+				<param name="movie" value="player_flv_maxi.swf"> 
+				<param name="FlashVars" value="flv=videos/recetapollo.flv">
+				<embed type="application/x-shockwave-flash" width="360" height="240" src="player_flv_maxi.swf" flashvars="flv=videos/recetapollo.flv">
+				</embed>
+			</object>
+		</video>
+	</body>
+</html>

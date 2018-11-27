@@ -1,6 +1,10 @@
 .mainmenu{
     display: none;
 }
+.audio-fondo {
+width: 160px;
+height: 36px;
+background: #FFFF00;}
 
 nav:hover .mainmenu{
     display: block;
