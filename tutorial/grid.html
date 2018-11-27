@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAW</title>
+    <link rel="stylesheet" href="css/SGStyle.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+</head>
+
+<body>
+    <div class="grid">
+        <header>Web Title</header>
+        <nav class="navigation">
+            <p id="pmenu">Menu</p>
+            <ul class="mainmenu">
+                <li><a href="index.html">Home</a>
+                <li><a href="boxmodel.html">Box Model</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="list.html">Lists</a>
+                    <ul class="submenu">
+                        <li><a href="list.html#orderedlist">Ordered List</a></li>
+                        <li><a href="list.html#unorderedlist">Unordered List</a></li>
+                    </ul>
+                </li>
+                <li><a href="responsivegrid.html">Responsive Grid Layout</a></li>
+            </ul>
+        </nav>
+        <section class="sec">
+            <article class="article">
+                <h2>Grid</h2>
+                <p>
+                    The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it
+                    easier to design web pages without having to use floats and positioning.
+                </p>
+                <hr>
+                <h2>Grid Elements</h2>
+                <p>
+                    A grid layout consists of a parent element, with one or more child elements.
+                </p>
+                <h2>Grid Colums</h2>
+                <p>
+                    The vertical line of grid items are called columns.
+                </p>
+                <h2>Grid Rows</h2>
+                <p>
+                    The horizontal line of grid items are called rows.
+                </p>
+                <h2>Grid Gaps</h2>
+                <p>
+                    The space between each column/row are called gaps.
+                </p>
+                <h2>Grid Lines</h2>
+                <p>
+                    The line between columns are called column lines. <br>
+                    The line between rows are called row lines.
+                </p>
+                <hr>
+                <p><b>Example:</b></p>
+                <div class="gridTuto">
+                    <div class="grHeader">Header</div>
+                    <div class="grNav">Nav</div>
+                    <div class="grMain">Main</div>
+                    <div class="grAside">Aside</div>
+                    <div class="grFooter">Footer</div>
+                </div>
+                <p><b>HTML Code:</b></p>
+                <textarea rows="7" cols="40" readonly>
+<div class="gridTuto">
+    <div class="grHeader">Header</div>
+    <div class="grNav">Nav</div>
+    <div class="grMain">Main</div>
+    <div class="grAside">Aside</div>
+    <div class="grFooter">Footer</div>
+</div>
+                </textarea>
+                <p><b>CSS Code:</b></p>
+                <textarea rows="14" cols="50" readonly>
+.gridTuto{
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-template-rows: auto auto 150px auto;
+    border: #686868 solid 2px;
+    border-radius: 2px;
+    text-align: center;
+    background-color: crimson;
+    font-family: Arial, Helvetica, sans-serif;
+    color:  rgb(236,236,236);
+}
+.grHeader{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    border: #686868 solid 2px;
+    border-radius: 2px;
+    
+}
+.grNav{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border: #686868 solid 2px;
+    border-radius: 2px;
+}
+.grMain{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    border: #686868 solid 2px;
+    border-radius: 2px;
+    padding-top: 70px;
+}
+.grAside{
+    grid-column: 2/3;
+    grid-row: 2/4;
+    border: #686868 solid 2px;
+    border-radius: 2px;
+    padding-top: 75px;
+}
+.grFooter{
+    grid-column: 1/3;
+    grid-row: 4/5;
+    border: #686868 solid 2px;
+    border-radius: 2px;
+}
+                </textarea>
+            </article>
+        </section>
+        <aside>Sponsors</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>

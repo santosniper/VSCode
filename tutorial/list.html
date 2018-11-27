@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAW</title>
+    <link rel="stylesheet" href="css/SGStyle.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+</head>
+
+<body>
+    <div class="grid">
+        <header>Web Title</header>
+        <nav class="navigation">
+            <p id="pmenu">Menu</p>
+            <ul class="mainmenu">
+                <li><a href="index.html">Home</a>
+                <li><a href="boxmodel.html">Box Model</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a>Lists</a>
+                    <ul class="submenu">
+                        <li><a href="#orderedlist">Ordered List</a></li>
+                        <li><a href="#unorderedlist">Unordered List</a></li>
+                    </ul>
+                </li>
+                <li><a href="grid.html">Grid Layout</a></li>
+                <li><a href="responsivegrid.html">Responsive Grid Layout</a></li>
+            </ul>
+        </nav>
+        <section class="sec">
+            <article class="article">
+                <h2>Lists</h2>
+                <p>
+                    Lists are used to display a set of consecutive items, such as a list of contacts or a list of
+                    messages.<br>
+                </p>
+                <p>
+                    <b>Characteristics</b><br>
+                    List items may vary in height (from one to three rows in a single item).<br>
+                    List items may be as simple as just a text string, to including images, text, and buttons.<br>
+                    Lists are comprised of rows, with optional section headers.<br></p>
+                <hr>
+                <h2 id="orderedlist">Ordered List</h2>
+                <p>
+                    Ordered Lists are, as the name implies, list that by default are ordered.<br>
+                    The &#60;ol &#62; tag defines an ordered list. An ordered list can be numerical or alphabetical.<br>
+                    Use the &#60;li &#62; tag to define list items.<br>
+                    <b>Code:</b>
+                </p>
+                <textarea rows="5" readonly>
+<ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+            </textarea>
+                <p><b>Example:</b></p>
+                <ol>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ol>
+                <hr>
+                <h2 id="unorderedlist">Unordered List</h2>
+                <p>
+                    Ordered Lists are, as the name implies, list that by default are ordered.<br>
+                    The &#60;ul &#62; tag defines an unordered list. An unordered list can be numerical or
+                    alphabetical.<br>
+                    Use the &#60;li &#62; tag to define list items.<br>
+                    <b>Code:</b>
+                </p>
+                <textarea rows="5" readonly>
+<ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ul>
+            </textarea>
+                <p><b>Example:</b></p>
+                <ul>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ul>
+                <hr>
+                <p>
+                    The <b>list-style</b> property is a shorthand property. It is used to set all the list properties
+                    in one declaration.
+                </p>
+                <p>
+                    When using the shorthand property, the order of the property values are:
+                </p>
+                <ul class="mainli">
+                    <li>
+                        <p>
+                            <b>list-style-type</b> if a list-style-image is specified,
+                            the value of this property will be displayed if the image
+                            for some reason cannot be displayed
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>list-style-position</b> specifies whether the
+                            list-item markers should appear
+                            inside or outside the content flow
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>list-style-image</b> specifies an image as the list item marker
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                    If one of the property values above are missing, the default value for the missing property will be
+                    inserted, if any.
+                </p>
+
+            </article>
+        </section>
+        <aside>Sponsors</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>

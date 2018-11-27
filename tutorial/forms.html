@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAW</title>
+    <link rel="stylesheet" href="css/SGStyle.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+</head>
+
+<body>
+    <div class="grid">
+        <header>Web Title</header>
+        <nav class="navigation">
+            <p id="pmenu">Menu</p>
+            <ul class="mainmenu">
+                <li><a href="index.html">Home</a>
+                <li><a href="boxmodel.html">Box Model</a></li>
+                <li><a href="list.html">Lists</a>
+                    <ul class="submenu">
+                        <li><a href="list.html#orderedlist">Ordered List</a></li>
+                        <li><a href="list.html#unorderedlist">Unordered List</a></li>
+                    </ul>
+                </li>
+                <li><a href="grid.html">Grid Layout</a></li>
+                <li><a href="responsivegrid.html">Responsive Grid Layout</a></li>
+            </ul>
+        </nav>
+        <section class="sec">
+
+            <article class="article">
+                <h2>CSS Forms</h2>
+
+                <p> The look of an HTML form can be greatly improved with CSS:</p>
+                <img src="img/form0.JPG">
+            </article><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <article class="article">
+                <h2>Styling Input Fields</h2>
+                <p>Use the width property to determine the width of the input field:</p>
+                <div><img src="img/form01.JPG"> </div>
+                <br><br><br><br>
+                <p>Example</p>
+                <textarea rows="5" readonly>
+                    input {
+                    width: 100%;
+                    }
+
+                </textarea>
+
+                <p>The example above applies to all &#60;input> elements. If you only want to style a specific input
+                    type,
+                    you can use attribute selectors:</p>
+                <ul>
+                    <li><strong>input[type=text] </strong> - will only select text fields</li>
+                    <li><strong>input[type=password]</strong> - will only select password fields</li>
+                    <li><strong>input[type=number]</strong> - will only select number fields</li>
+                    <li><strong>etc...</strong></li>
+                </ul>
+
+            </article>
+            <article class="article">
+                <h2>Styling Textareas</h2>
+                <p><strong>Tip:</strong>Use the resize property to prevent textareas from being resized (disable
+                    the "grabber" in the bottom right corner):</p>
+                <p>Example</p>
+                <div><img src="img/form02.JPG">
+                </div>
+                <br><br><br><br><br><br><br><br>
+                <textarea rows="15" readonly>
+                    textarea {
+                    width: 100%;
+                    height: 150px;
+                    padding: 12px 20px;
+                    box-sizing: border-box;
+                    border: 2px solid #ccc;
+                    border-radius: 4px;
+                    background-color: #f8f8f8;
+                    resize: none;
+                    }
+                  
+
+
+                </textarea>
+            </article>
+
+            <article class="article">
+                <h2>Styling Select Menus</h2>
+                <div><img src="img/form03.JPG">
+                </div>
+                <br><br><br><br><br><br><br><br>
+                <textarea rows="15" readonly>
+                    select {
+                    width: 100%;
+                    padding: 16px 20px;
+                    border: none;
+                    border-radius: 4px;
+                    background-color: #f1f1f1;
+                    }
+
+
+                </textarea>
+
+            </article>
+
+            <article class="article">
+                <h2>Styling Input Buttons</h2>
+                <div><img src="img/form04.JPG">
+                </div>
+                <br><br><br><br><br><br>
+                <p>Example</p>
+                <textarea rows="15" readonly>
+                    input[type=button], input[type=submit], input[type=reset] {
+                    background-color: #4CAF50;
+                    border: none;
+                    color: white;
+                    padding: 16px 32px;
+                    text-decoration: none;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    }
+                    
+                    /* Tip: use width: 100% for full-width buttons */
+
+
+                </textarea>
+
+            </article>
+        </section>
+        <aside>Sponsors</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>
