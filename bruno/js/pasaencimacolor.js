@@ -6,6 +6,7 @@ $(document).ready(function () {
     var boton2 = document.getElementById("bot2");
     var boton3 = document.getElementById("bot3");
     var boton4 = document.getElementById("bot4");
+    var boton5 = document.getElementById("bot5");
 
 
 
@@ -21,22 +22,18 @@ $(document).ready(function () {
     boton2.addEventListener("click", del2, false);
     boton3.addEventListener("click", del3, false);
     boton4.addEventListener("click", del4, false);
+    boton5.addEventListener("click", res, false);
 
 
 
 });
 
 function del1() {
-    $(".foto11").toggleClass("adios");
-    $(".foto12").toggleClass("adios");
-    $(".foto13").toggleClass("adios");
-    $(".foto14").toggleClass("adios");
-    $(".foto15").toggleClass("adios");
-    $(".foto16").toggleClass("adios");
-    $(".foto17").toggleClass("adios");
-    $(".foto18").toggleClass("adios");
-    $(".foto19").toggleClass("adios");
-    $(".foto20").toggleClass("adios");
+    $(".pika").addClass("adios");
+    $(".charman").addClass("adios");
+    $(".otros").addClass("adios");
+    $(".stitch").removeClass("adios");
+
 
     $("#pic01").attr("src", "img/stitich00.jpg");
     $("#pic02").attr("src", "img/stitich01.jpg");
@@ -54,48 +51,22 @@ function del1() {
 }
 
 function del2() {
-    $(".foto01").toggleClass("adios");
-    $(".foto02").toggleClass("adios");
-    $(".foto03").toggleClass("adios");
-    $(".foto04").toggleClass("adios");
-    $(".foto05").toggleClass("adios");
-    $(".foto06").toggleClass("adios");
-    $(".foto07").toggleClass("adios");
-    $(".foto08").toggleClass("adios");
-    $(".foto09").toggleClass("adios");
-    $(".foto10").toggleClass("adios");
-    $(".foto13").toggleClass("adios");
-    $(".foto14").toggleClass("adios");
-    $(".foto15").toggleClass("adios");
-    $(".foto16").toggleClass("adios");
-    $(".foto17").toggleClass("adios");
-    $(".foto18").toggleClass("adios");
-    $(".foto19").toggleClass("adios");
-    $(".foto20").toggleClass("adios");
+    $(".stitch").addClass("adios");
+    $(".charman").addClass("adios");
+    $(".otros").addClass("adios");
+    $(".pika").removeClass("adios");
+
 
     $("#pic11").attr("src", "img/poke00.png");
     $("#pic12").attr("src", "img/poke01.png");
 }
 
 function del4() {
-    $(".foto01").toggleClass("adios");
-    $(".foto02").toggleClass("adios");
-    $(".foto03").toggleClass("adios");
-    $(".foto04").toggleClass("adios");
-    $(".foto05").toggleClass("adios");
-    $(".foto06").toggleClass("adios");
-    $(".foto07").toggleClass("adios");
-    $(".foto08").toggleClass("adios");
-    $(".foto09").toggleClass("adios");
-    $(".foto10").toggleClass("adios");
-    $(".foto11").toggleClass("adios");
-    $(".foto12").toggleClass("adios");
-    $(".foto13").toggleClass("adios");
-    $(".foto14").toggleClass("adios");
-    $(".foto15").toggleClass("adios");
-    $(".foto16").toggleClass("adios");
-    $(".foto19").toggleClass("adios");
-    $(".foto20").toggleClass("adios");
+    $(".stitch").addClass("adios");
+    $(".otros").addClass("adios");
+    $(".pika").addClass("adios");
+    $(".charman").removeClass("adios");
+
 
     $("#pic17").attr("src", "img/poke06.png");
     $("#pic18").attr("src", "img/poke07.png");
@@ -103,20 +74,10 @@ function del4() {
 }
 
 function del3() {
-    $(".foto01").toggleClass("adios");
-    $(".foto02").toggleClass("adios");
-    $(".foto03").toggleClass("adios");
-    $(".foto04").toggleClass("adios");
-    $(".foto05").toggleClass("adios");
-    $(".foto06").toggleClass("adios");
-    $(".foto07").toggleClass("adios");
-    $(".foto08").toggleClass("adios");
-    $(".foto09").toggleClass("adios");
-    $(".foto10").toggleClass("adios");
-    $(".foto11").toggleClass("adios");
-    $(".foto12").toggleClass("adios");
-    $(".foto17").toggleClass("adios");
-    $(".foto18").toggleClass("adios");
+    $(".stitch").addClass("adios");
+    $(".pika").addClass("adios");
+    $(".charman").addClass("adios");
+    $(".otros").removeClass("adios");
 
     $("#pic13").attr("src", "img/poke02.png");
     $("#pic14").attr("src", "img/poke03.png");
@@ -126,6 +87,13 @@ function del3() {
     $("#pic20").attr("src", "img/poke09.png");
 
 
+}
+
+function res() {
+    $(".stitch").removeClass("adios");
+    $(".charman").removeClass("adios");
+    $(".otros").removeClass("adios");
+    $(".pika").removeClass("adios");
 }
 
 function cambiame(param) {
