@@ -1,0 +1,115 @@
+body{
+    background-color: #2D882D;
+
+}
+
+header{
+    text-align: center;
+    background-color: #55AA55;
+    color: black;
+    margin-top: 0%;
+}
+
+#content{
+    color: black;
+    text-align: justify;
+    background-color: #116611;
+    width: 70%;
+    margin-left: 0px;
+    margin-top: 2%;
+    height: auto;
+    position: absolute;
+}
+
+#lateral{
+    background-color: #88CC88;
+    width: 30%;
+    height: 100%;
+    margin-top: 2%;
+    margin-left: 71%;
+
+}
+
+
+#footer {
+	width: 100%;
+	height: 10%;
+	position: fixed;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    
+}
+
+table{
+    border: 7px dashed aqua;
+    }
+
+td{
+    padding: 50px;
+}
+
+
+
+
+
+.botones {
+    background-color: black;
+    color: white;
+    border: 2px solid red;
+    height: 50px;
+    width: 120px;
+}
+
+.botones:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.botones:active {
+  background-color: #555555;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.primero{
+    float: left;
+   
+    position: relative;
+    max-width: 150px;
+}
+.segundo{
+    float: right;
+    
+    position: relative;
+    max-width: 150px;
+}
+
+.c1{
+    color: white;
+    background-color: blueviolet;
+}
+
+section{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: 2px solid red;
+    height: 50px;
+    width: 120px;
+}
+
+button:hover {
+    background-color: #555555;
+    color: white;
+}
+
+button:active {
+  background-color: #555555;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
