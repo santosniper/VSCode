@@ -87,6 +87,8 @@ function del3() {
     $("#pic20").attr("src", "img/poke09.png");
 
 
+
+
 }
 
 function res() {
@@ -94,6 +96,30 @@ function res() {
     $(".charman").removeClass("adios");
     $(".otros").removeClass("adios");
     $(".pika").removeClass("adios");
+
+    $("#pic01").attr("src", "img/stitich000.jpg");
+    $("#pic02").attr("src", "img/stitich001.jpg");
+    $("#pic03").attr("src", "img/stitich002.jpg");
+    $("#pic04").attr("src", "img/stitich003.jpg");
+    $("#pic05").attr("src", "img/leroy000.png");
+    $("#pic06").attr("src", "img/leroy001.png");
+    $("#pic07").attr("src", "img/leroy002.png");
+    $("#pic08").attr("src", "img/leroy003.png");
+    $("#pic09").attr("src", "img/angel000.jpg");
+    $("#pic10").attr("src", "img/angel001.jpg");
+
+    $("#pic11").attr("src", "img/poke000.png");
+    $("#pic12").attr("src", "img/poke001.png");
+
+    $("#pic17").attr("src", "img/poke006.png");
+    $("#pic18").attr("src", "img/poke007.png");
+
+    $("#pic13").attr("src", "img/poke002.png");
+    $("#pic14").attr("src", "img/poke003.png");
+    $("#pic15").attr("src", "img/poke004.png");
+    $("#pic16").attr("src", "img/poke005.png");
+    $("#pic19").attr("src", "img/poke008.png");
+    $("#pic20").attr("src", "img/poke009.png");
 }
 
 function cambiame(param) {
