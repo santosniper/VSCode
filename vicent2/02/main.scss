@@ -1,5 +1,15 @@
+@mixin hover-color($color) {
+&:hover{
+color: $color;
+}
+}
+$stripe-properties: to bottom, 15%, blue, white;
 @mixin backface-visibility($visibility: hidden) {
-// Backface properties
+backface-visibility: $visibility;
+-webkit-backface-visibility: $visibility;
+-moz-backface-visibility: $visibility;
+-ms-backface-visibility: $visibility;
+-o-backface-visibility: $visibility;
 }
 @mixin transition($time){
 transition: $time;
@@ -14,6 +24,7 @@ transform-style: $style;
 -ms-transform-style: $style;
 -webkit-transform-style: $style;
 }
+
 @mixin stripes($direction, $width-percent, $stripe-color, $stripe-background: #FFF) {
 background: repeating-linear-gradient(
 $direction,
@@ -31,7 +42,8 @@ transform: $transformation;
 -o-transform: $transformation;
 }
 
-@mixin photo-content {
+@mixin photo-content($file) {
+content: url(#{$file}.jpg);
 object-fit: cover;
 }
 
@@ -61,6 +73,7 @@ position: absolute;
 z-index: 3;
 font-size: 20px;
 .word {
+@include hover-color(red);
 display: block;
 text-align: center;
 position: relative;
@@ -75,7 +88,9 @@ line-height: 1.6;
 .definition {
     width: 100%;
 height: 100%;
+@include stripes($stripe-properties...);
 .photo {
+@include photo-content('titanosaur');
 width: 60%;
 margin: 0px auto;
 }
