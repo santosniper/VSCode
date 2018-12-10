@@ -33,6 +33,9 @@ header{
     margin-left: 71%;
 
 }
+.agotado{
+	text-decoration: line-through;
+}
 
 #footer {
 	width: 100%;
