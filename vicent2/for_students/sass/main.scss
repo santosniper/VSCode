@@ -1,10 +1,12 @@
+@import "helper/variables";
 @import "helper/placeholders";
 @import "helper/mixins";
 
 h1 {
   font-family: Arial, Helvetica, sans-serif;
-  @include center;
+ @extend %center;
 }
+
 
 .banner {
   font-family: Arial, Helvetica, sans-serif, cursive;
@@ -22,11 +24,13 @@ h1 {
     left: 25%;
     line-height: 200px;
     @include dimensions(50%, 200px);
+   @extend %absolute;
 
     span {
-      @include center;
+    @extend %center;
       width: 40%;
       left: 30%;
+      @extend %absolute;
     }
   }
 }
