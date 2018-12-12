@@ -11,6 +11,7 @@ $(function () {
 
     function dobleclikeado() {
 
+
         switch (this.id) {
             case "i1":
 
@@ -120,6 +121,29 @@ $(function () {
                 }
                 break;
         }
+
+        $("#" + this.id)
+            .clone()
+            .appendTo("#cart_items")
+            .attr("id", "#c" + this.id)
+            .attr("class", "icart")
+            .children(".stock")
+            .hide();
+
+
+
+        $(".icart")
+            .children()
+            .andSelf()
+            .css("cursor", "default");
+
+        var $delete = $('<a href="" class="delete"></a>');
+        $(".icart").prepend($delete);
+
+
+
+
+
 
 
     }
