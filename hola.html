@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+
+    Down<input type="text" onkeydown="down()"><br>
+    Press<input type="text" onkeypress="press()"><br>
+    Up<input type="text" onkeyup="up()" id="up"><br>
+    Unicode pulsada<input type="text" onkeypress="letra(event)"><br>
+    <p id="prueba"></p>
+    <script>
+        function down() {
+            alert("down");
+
+        }
+
+        function press() {
+            alert("press");
+
+        }
+
+        function up() {
+            var x = document.getElementById("up");
+            x.value = x.value.toUpperCase();
+        }
+        function letra(event) {
+            var x = event.which;
+            document.getElementById("prueba").innerHTML = "El Unicode de la tecla es: " + x;
+        }
+
+    </script>
+</body>
+
+</html>

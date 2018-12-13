@@ -12,6 +12,8 @@ $(function () {
     function dobleclikeado() {
 
 
+
+
         switch (this.id) {
             case "i1":
 
@@ -122,23 +124,50 @@ $(function () {
                 break;
         }
 
+
         $("#" + this.id)
             .clone()
-            .appendTo("#cart_items")
-            .attr("id", "#c" + this.id)
+            .prependTo("#cart_items")
+            .attr("id", "c" + this.id)
             .attr("class", "icart")
             .children(".stock")
             .hide();
 
 
 
-        $(".icart")
+        $("#c" + this.id)
             .children()
             .andSelf()
             .css("cursor", "default");
 
-        var $delete = $('<a href="" class="delete"></a>');
-        $(".icart").prepend($delete);
+        var $delete = $('<a  class="delete"></a>');
+
+        $("#c" + this.id).prepend($delete);
+        var a = "#c" + this.id;
+
+        $delete.click(function clik() {
+
+            $(a).remove();
+
+        });
+
+        // $delete.addEventListener("click", clik("c" + this.id), false);
+
+
+        // function clik(a) {
+        //     alert(a);
+        //     delete (this);
+
+        // }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -147,6 +176,8 @@ $(function () {
 
 
     }
+
+
 
 
 
