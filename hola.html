@@ -29,7 +29,7 @@
             x.value = x.value.toUpperCase();
         }
         function letra(event) {
-            var x = event.which;
+            var x = event.which || event.keycode;
             document.getElementById("prueba").innerHTML = "El Unicode de la tecla es: " + x;
         }
 
