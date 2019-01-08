@@ -1,4 +1,4 @@
-#arriba{
+#verde{
     background-color: green;
 }
 
@@ -6,3 +6,18 @@
     background-color: red;
 }
 
+#azul{
+    background-color: blue;
+}
+
+#rosa{
+    background-color: violet;
+}
+
+#carne{
+    background-color: orangered;
+}
+
+.container{
+   padding: 50px; 
+}
