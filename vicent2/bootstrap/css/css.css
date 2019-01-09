@@ -8,6 +8,7 @@
 
 #azul{
     background-color: blue;
+     border: 1px white solid;
 }
 
 #rosa{
@@ -16,8 +17,10 @@
 
 #carne{
     background-color: orangered;
+  
 }
 
-.container{
-   padding: 50px; 
+.row{
+    border: 1px white solid;
 }
+

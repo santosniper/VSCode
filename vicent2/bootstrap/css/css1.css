@@ -1,0 +1,30 @@
+#verde{
+    background-color: green;
+}
+
+
+#azulito{
+    background-color: blue;
+    border: 1px white solid;
+}
+
+#gris{
+    background-color: grey;
+    border: 1px white solid;
+}
+
+#azul{
+    background-color: aqua;
+}
+
+#carne{
+    background-color: orangered;
+      border: 1px white solid;
+}
+
+.row{
+    border: 1px white solid;
+}
+
+
+
