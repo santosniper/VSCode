@@ -1,0 +1,110 @@
+
+#header{
+    font-style: italic;
+    background-color: lime;
+    border: 1px white solid;
+@media screen and (max-width: 767px){
+      
+    background-color: aqua;
+    
+}
+
+@media screen and (max-width: 576px){
+    
+    background-color: orangered;
+    text-align: center;  
+}
+
+}
+
+
+
+#uno{
+    font-style: bold;
+    font-size: 40px;
+    background-color: red;
+    text-align: center;
+    border: 1px white solid;
+@media screen and (max-width: 767px){
+       text-align: left;   
+    
+}
+
+}
+
+#dos{
+    font-style: bold;
+    font-size: 40px;
+    background-color: red;
+    text-align: center;
+    border: 1px white solid;
+@media screen and (max-width: 767px){
+       text-align: right;   
+    
+}
+
+@media screen and (max-width: 576px){ 
+    text-align: center;
+    background-color: aqua;
+}
+
+}
+
+#tres{
+    font-style: bold;
+    font-size: 40px;
+    background-color: red;
+    text-align: center;
+    border: 1px white solid;
+@media screen and (max-width: 767px){
+          background-color: lime;    
+}
+
+@media screen and (max-width: 576px){ 
+    text-align: right;
+    background-color: red;
+}
+
+}
+
+#tres{
+    font-style: bold;
+    font-size: 40px;
+    background-color: red;
+    text-align: center;
+    border: 1px white solid;
+@media screen and (max-width: 767px){
+          background-color: lime;    
+}
+
+@media screen and (max-width: 576px){ 
+    text-align: right;
+    background-color: red;
+}
+
+}
+
+#footer1{
+    font-style: italic;
+    background-color: yellow;
+    text-align: right;
+    border: 1px white solid;
+@media screen and (max-width: 767px){ 
+    text-align: center;  
+}
+
+}
+
+#footer2{
+    font-style: italic;
+    background-color: yellow;
+    text-align: left;
+    border: 1px white solid;
+@media screen and (max-width: 767px){ 
+    text-align: center;  
+}
+
+}
+
+
+
