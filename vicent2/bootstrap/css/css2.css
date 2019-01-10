@@ -1,3 +1,9 @@
+
+#header{
+    background-color: orangered;
+      border: 1px white solid;
+}
+
 #verde{
     background-color: green;
      border: 1px white solid;
@@ -24,10 +30,7 @@
      border: 1px white solid;
 }
 
-#carne{
-    background-color: orangered;
-      border: 1px white solid;
-}
+
 
 .row{
     border: 1px white solid;

@@ -50,7 +50,7 @@
             $("#c" + this.id).prepend($delete);
             var a = "#c" + this.id;
 
-            $delete.click(function clik() {
+            $delete.on("click", function clik() {
                 /*
                 separo la "C" de el id del objeto en el carrito
                 lo convierto en la id del objeto que seleccinamos
@@ -70,7 +70,7 @@
 
                 $(a).remove();
 
-                $(zid).children(".stock").removeClass("agotado");
+                $(id).children(".stock").removeClass("agotado");
 
 
                 //restamos uno al total de los objetos adquiridos
