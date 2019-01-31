@@ -24,74 +24,43 @@ Oropesa y Peñiscola, por ejemplo).
 
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
 </head>
 
 <body>
-    <form>
-
+    <header>
         <h1>Información de contacto</h1>
-        Nombre*<input type="text" name="nombre" value=""><br>
-        Edad<input type="text" name="edad" value=""><br>
-        DNI<input type="text" name="dni" value=""><br>
-        Dirección*<input type="text" name="direccion" vlaue=""><br>
-        Selecciona provincia<select name="provincias">
-            <option value="Alicante">Alacant</option>
-            <option value="Valencia">València</option>
-            <option value="Castellón">Castelló</option>
-        </select><br>
-        Localidad<select name="localidad">
+    </header>
+    <div id="cubo">
+        <form id="formulari">
 
-            <option value="Alacant">Aigües</option>
-            <option value="Alacant">Alcosser de Planes</option>
-            <option value="Alacant">Alcoi</option>
-            <option value="Alacant">Alfafara</option>
-            <option value="Alacant">L'Alfàs del Pi</option>
-            <option value="Alacant">Alacant</option>
-            <option value="Alacant">Almoradí</option>
-            <option value="Alacant">Altea</option>
-            <option value="Alacant">Benferri</option>
-            <option value="Alacant">Benferri</option>
-            <option value="Alacant">Benidorm</option>
-            <option value="Alacant">Benilloba</option>
-            <option value="Alacant">Benimantell</option>
-            <option value="Alacant">Benissa</option>
-            <option value="Alacant">Calp</option>
-            <option value="Alacant">Cocentaina</option>
-            <option value="Alacant">Crevillent</option>
-            <option value="Alacant">Dénia</option>
-            <option value="Alacant">Elx </option>
-            <option value="Alacant">Elda</option>
-            <option value="Alacant">Finestrat</option>
-            <option value="Alacant">Gata de Gorgos</option>
-            <option value="Alacant">Guardamar del Segura</option>
-            <option value="Alacant">Xàbia</option>
-            <option value="Alacant">Xixona</option>
-            <option value="Alacant">Novelda</option>
-            <option value="Alacant">Oriola</option>
-            <option value="Alacant"></option>
-            <option value="Alacant"></option>
-            <option value="Alacant"></option>
-            <option value="Alacant"></option>
-            <option value="Alacant"></option>
-            <option value="Alacant"></option>
-            <option value="Alacant"></option>
-            <option value="Alacant"></option>
-            <option value="Alacant"></option>
-            <option value="Alacant"></option>
-            <option value="Alacant"></option>
-            <option value="Alacant"></option>
-            <option value="Alicante"></option>
-            <option value="Alicante"></option>
-            <option value="Alicante"></option>
-        </select>
 
-    </form>
+            Nombre*<input type="text" name="nombre" value="" required><br>
+            Edad<input type="text" name="edad" value=""><br>
+            DNI<input type="text" name="dni" value="">--<input type="text" name="letra" value="" size="1"><br>
+            Dirección*<input type="text" name="direccion" vlaue="" required><br>
+            Selecciona provincia<select name="provincias" id="provin">
+                <option value="selecciona">selecciona</option>
+                <option value="Alacant">Alacant</option>
+                <option value="Valencia">Valencia</option>
+                <option value="Castello">Castello</option>
+            </select><br>
+            Localidad<select name="localidad" id="local">
 
+            </select><br>
+            Código Postal*<input type="text" name="cp" value="" required><br>
+            Teléfono de contacto<input type="tel" name="tlf" value=""><br>
+            Correo electrónico<input type="text" name="correo" id="correo" value=""><br>
+            Repita su correo electrónico<input type="text" name="correo2" value=""><br>
+            <p>(*)Datos obligatorios</p>
+            <button type="submit" value="enviar" id="boton">Enviar los datos</button><button type="reset" value="limpiar">Empezar
+                de
+                nuevo</button>
+        </form>
+    </div>
 </body>
+<link rel="stylesheet" type="text/css" media="screen" href="css/form00.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/form00.js"></script>
 
 </html>

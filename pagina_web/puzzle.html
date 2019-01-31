@@ -12,7 +12,17 @@
     </header>
     <button id="gTabla">Generar Tabla</button>
     <p id="cMov" class="hidden">mov</p>
-    <p id="reloj" class="hidden">reloj</p>
+    <div id="contenedor" class="hidden">
+        <div class="reloj" id="Horas">00</div>
+        <div class="reloj" id="Minutos">:00</div>
+        <div class="reloj" id="Segundos">:00</div>
+        <div class="reloj" id="Centesimas">:00</div>
+        <input type="button" class="boton" id="inicio" value="Start &#9658;" onclick="inicio();">
+        <input type="button" class="boton" id="parar" value="Stop &#8718;" onclick="parar();" disabled>
+        <input type="button" class="boton" id="continuar" value="Resume &#8634;" onclick="inicio();" disabled>
+        <input type="button" class="boton" id="reinicio" value="Reset &#8635;" onclick="reinicio();" disabled>
+    </div>
+
 
 </body>
 <link rel="stylesheet" type="text/css" media="screen" href="css\puzzle.css" />
