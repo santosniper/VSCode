@@ -94,11 +94,14 @@
   }
 }
 
-#footer1 {
+#footer1, #footer2 {
   font-style: italic;
   background-color: yellow;
-  text-align: right;
   border: 1px white solid;
+}
+
+#footer1 {
+  text-align: right;
 }
 
 @media screen and (max-width: 767px) {
@@ -108,10 +111,7 @@
 }
 
 #footer2 {
-  font-style: italic;
-  background-color: yellow;
   text-align: left;
-  border: 1px white solid;
 }
 
 @media screen and (max-width: 767px) {

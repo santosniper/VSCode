@@ -1,0 +1,97 @@
+<!--
+Realiza una página que contenga un formulario de inscripción como el que 
+figura en la imagen (no hace falta que sea idéntico).
+
+En este se comprobará los datos obligatorios (con *) al abandonar el foco
+marcándo los bordes en rojo de estar vacio.
+ 
+Cuando se pulse al botón "enviar" se comprobará (si el campo esta cumplimentado) que el DNI corresponde con la letra.
+
+Se comprobará que el teléfono es correcto (tiene 9 cifras).
+
+Se comprobará que el correo electrónico se escribió correctamente
+(en los dos campos se escribió igual y que lleva una @).
+
+Al seleccionar la Provincia (Alicante, Castellón, Valencia)
+se mostrarán las localidades correspondientes en la select localidad.
+(Si seleccionamos Valencia que aparezcan Requena, Quart de Poblet,
+Alboraia, etc. Si seleccionamos Castellón, que aparezca Villareal,
+Oropesa y Peñiscola, por ejemplo). 
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <form>
+
+        <h1>Información de contacto</h1>
+        Nombre*<input type="text" name="nombre" value=""><br>
+        Edad<input type="text" name="edad" value=""><br>
+        DNI<input type="text" name="dni" value=""><br>
+        Dirección*<input type="text" name="direccion" vlaue=""><br>
+        Selecciona provincia<select name="provincias">
+            <option value="Alicante">Alacant</option>
+            <option value="Valencia">València</option>
+            <option value="Castellón">Castelló</option>
+        </select><br>
+        Localidad<select name="localidad">
+
+            <option value="Alacant">Aigües</option>
+            <option value="Alacant">Alcosser de Planes</option>
+            <option value="Alacant">Alcoi</option>
+            <option value="Alacant">Alfafara</option>
+            <option value="Alacant">L'Alfàs del Pi</option>
+            <option value="Alacant">Alacant</option>
+            <option value="Alacant">Almoradí</option>
+            <option value="Alacant">Altea</option>
+            <option value="Alacant">Benferri</option>
+            <option value="Alacant">Benferri</option>
+            <option value="Alacant">Benidorm</option>
+            <option value="Alacant">Benilloba</option>
+            <option value="Alacant">Benimantell</option>
+            <option value="Alacant">Benissa</option>
+            <option value="Alacant">Calp</option>
+            <option value="Alacant">Cocentaina</option>
+            <option value="Alacant">Crevillent</option>
+            <option value="Alacant">Dénia</option>
+            <option value="Alacant">Elx </option>
+            <option value="Alacant">Elda</option>
+            <option value="Alacant">Finestrat</option>
+            <option value="Alacant">Gata de Gorgos</option>
+            <option value="Alacant">Guardamar del Segura</option>
+            <option value="Alacant">Xàbia</option>
+            <option value="Alacant">Xixona</option>
+            <option value="Alacant">Novelda</option>
+            <option value="Alacant">Oriola</option>
+            <option value="Alacant"></option>
+            <option value="Alacant"></option>
+            <option value="Alacant"></option>
+            <option value="Alacant"></option>
+            <option value="Alacant"></option>
+            <option value="Alacant"></option>
+            <option value="Alacant"></option>
+            <option value="Alacant"></option>
+            <option value="Alacant"></option>
+            <option value="Alacant"></option>
+            <option value="Alacant"></option>
+            <option value="Alacant"></option>
+            <option value="Alicante"></option>
+            <option value="Alicante"></option>
+            <option value="Alicante"></option>
+        </select>
+
+    </form>
+
+</body>
+
+</html>

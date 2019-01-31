@@ -1,11 +1,26 @@
 ﻿$(function () {
 
+
     var cuadro = document.querySelectorAll(".item");
     for (var i = 0; i < cuadro.length; i++) {
         cuadro[i].addEventListener("dblclick", clikealo, false);
     }
+    var clear = document.getElementById("btn_clear");
+
+    clear.addEventListener("click", vacialo, false);
+
+    function vacialo() {
+        alert("tonto");
+        $(".delete", this).click(function () {
+            $(this).find("a").remove();
+        });
+
+    }
+
+
 
     function clikealo() {
+
         if ($("#" + this.id).children(".stock").text() != "Stock 0") {
             var num = $("#" + this.id).children(".stock").text();
             num = num.split(" ");
@@ -88,14 +103,9 @@
                 var contPric = parseInt($("#cprice").val());
                 $("#cprice").attr("value", contPric - cost + " €");
 
-
-
-
-
-
-
-
             });
+
+
 
 
 
