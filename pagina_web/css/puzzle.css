@@ -64,6 +64,11 @@ header{
 
 }
 
+.fotito{
+    width: 120px;
+    height: 120px;
+}
+
 
 #footer {
 	width: 100%;
@@ -140,5 +145,13 @@ table td, table tr{
 
 .hidden{
     display: none;
+}
+
+#derecha{
+    float: right;
+}
+
+#botoncito1,#botoncito2,#botoncito3,#botoncito4{
+     width: 130px;
 }
 

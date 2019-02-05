@@ -8,19 +8,31 @@
 
 <body>
     <header>
-        <h1>Puzzle Hector Santos</h1>
+        <h1 id="titulo">Puzzle Hector Santos</h1>
     </header>
-    <button id="gTabla">Generar Tabla</button>
-    <p id="cMov" class="hidden">mov</p>
+    <input type="button" id="gTabla" value="Empezar a jugar">
+    <p id="cMov" class="hidden">Movimientos</p>
     <div id="contenedor" class="hidden">
-        <div class="reloj" id="Horas">00</div>
-        <div class="reloj" id="Minutos">:00</div>
-        <div class="reloj" id="Segundos">:00</div>
-        <div class="reloj" id="Centesimas">:00</div>
-        <input type="button" class="boton" id="inicio" value="Start &#9658;" onclick="inicio();">
-        <input type="button" class="boton" id="parar" value="Stop &#8718;" onclick="parar();" disabled>
-        <input type="button" class="boton" id="continuar" value="Resume &#8634;" onclick="inicio();" disabled>
-        <input type="button" class="boton" id="reinicio" value="Reset &#8635;" onclick="reinicio();" disabled>
+
+
+
+
+    </div>
+    <div id="derecha">
+        <table id="tablita">
+            <tr id="filita">
+                <td><img src="img/formada1.png" class="fotito"></td>
+                <td><img src="img/formada2.png" class="fotito"></td>
+                <td><img src="img/formada3.png" class="fotito"></td>
+                <td><img src="img/formada4.png" class="fotito"></td>
+            </tr>
+
+        </table>
+        <button id="botoncito1" class="">1</button>
+        <button id="botoncito2" class="">2</button>
+        <button id="botoncito3" class="">3</button>
+        <button id="botoncito4" class="">4</button>
+
     </div>
 
 
