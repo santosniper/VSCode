@@ -147,6 +147,10 @@ table td, table tr{
     display: none;
 }
 
+.escondida{
+    display: none;
+}
+
 #derecha{
     float: right;
 }
