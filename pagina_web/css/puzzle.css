@@ -80,9 +80,7 @@ header{
     
 }
 
-table{
-    border: 7px solid black;
-}
+
 a {
     background-color: black;
     color: white;
@@ -141,6 +139,12 @@ table td, table tr{
     border-bottom: 0;
     
  
+}
+#ejemplo{
+    width: 250px;
+    height: 250px;
+    float: right;
+    margin-right: 115px;
 }
 
 .hidden{
