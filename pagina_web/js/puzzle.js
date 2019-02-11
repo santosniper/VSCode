@@ -109,7 +109,7 @@ $(document).ready(function () {
 
                         //creamos unna columna con una imagen vacia
                         $("#fila" + s).append('<td id="col' + s + ss + '"><img src="img/sola.png" id="' + xx[yy] + '" class="vacio"></tr>');
-                        alert(xx[yy]);
+                        //alert(xx[yy]);
 
 
 
@@ -126,7 +126,7 @@ $(document).ready(function () {
 
                         //creamos unna columna con una imagen vacia
                         $("#fila" + s).append('<td id="col' + s + ss + '"><img src="img/sola.png" id="' + xx[yy] + '" class="vacio"></tr>');
-                        alert(xx[yy]);
+                        //alert(xx[yy]);
 
 
 
@@ -143,7 +143,7 @@ $(document).ready(function () {
 
                         //creamos unna columna con una imagen vacia
                         $("#fila" + s).append('<td id="col' + s + ss + '"><img src="img/sola.png" id="' + xx[yy] + '" class="vacio"></tr>');
-                        alert(xx[yy]);
+                        //alert(xx[yy]);
 
 
 
@@ -160,7 +160,7 @@ $(document).ready(function () {
 
                         //creamos unna columna con una imagen vacia
                         $("#fila" + s).append('<td id="col' + s + ss + '"><img src="img/sola.png" id="' + xx[yy] + '" class="vacio"></tr>');
-                        alert(xx[yy]);
+                        //alert(xx[yy]);
 
 
 

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/css.css" />
+
+</head>
+
+<body>
+    <script>
+        var numeros = new Array();
+        for (var i = 0; i < 100; i++) {
+
+            numeros[i] = parseInt(Math.random() * 100);
+        }
+
+        function fun01(myArray) {
+
+            myArray.sort();
+            document.write('<table border=3px>');
+            var z = 0;
+
+            for (var x = 0; x < 10; x++) {
+                document.write("<tr>");
+                for (var o = 0; o < 10; o++) {
+                    document.write("<td>");
+                    document.write(myArray[z]);
+                    document.write("</td>");
+                    z++;
+                }
+                document.write("</tr>");
+
+
+            }
+            document.write('</table>');
+
+        }
+
+        fun01(numeros);
+
+    </script>
+
+
+</body>
+<a href="index.html" class="button">Volver</a>
+
+</html>

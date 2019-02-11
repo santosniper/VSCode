@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/css.css" />
+
+</head>
+
+<body>
+    <script>
+
+        var oFecha = new Date();
+        oFecha.diaMes = oFecha.getDate();
+        oFecha.diaSemana = oFecha.getDay();
+        ofecha.mesNum = oFecha.getMonth();
+        oFecha.mesNom = oFecha.getMonth();
+        switch (oFecha.mesNom{
+            case 1:
+                oFecha.mesNom = "Enero";
+                break;
+
+            case 2:
+                oFecha.mesNom = "Febrero";
+                break;
+
+            case 3:
+                oFecha.mesNom = "Marzo";
+                break;
+
+            case 4:
+                oFecha.mesNom = "Abril";
+                break;
+
+            case 5:
+                oFecha.mesNom = "Mayo";
+                break;
+
+            case 6:
+                oFecha.mesNom = "Junio";
+                break;
+
+            case 7:
+                oFecha.mesNom = "Julio";
+                break;
+
+            case 8:
+                oFecha.mesNom = "Agosto";
+                break;
+
+            case 9:
+                oFecha.mesNom = "Septiembre";
+                break;
+
+            case 10:
+                oFecha.mesNom = "Octubre";
+                break;
+
+            case 11:
+                oFecha.mesNom = "Noviembre";
+                break;
+
+            case 12:
+                oFecha.mesNom = "Dicimebre";
+                break;
+        }
+        oFecha.año = oFecha.getFullYear();
+        oFecha.dia_semana = oFechas.getDay();
+        switch (oFecha.dia_semana) {
+            case 1:
+                oFecha.dia_semana = "Lunes";
+                break;
+
+            case 2:
+                oFecha.dia_semana = "Martes";
+                break;
+
+            case 3:
+                oFecha.dia_semana = "Miércoles";
+                break;
+
+            case 4:
+                oFecha.dia_semana = "Jueves";
+                break;
+
+            case 5:
+                oFecha.dia_semana = "Viernes";
+                break;
+
+            case 6:
+                oFecha.dia_semana = "Sábado";
+                break;
+
+            case 7:
+                oFecha.dia_semana = "Domingo";
+                break;
+        }
+
+
+        oFecha.obtenFechaN() = function () {
+            document.write("Hoy es " + diaMes + "/" + mesNum + "/" + año);
+        }
+
+        oFecha.obtenFecha() = function () {
+            document.write("Hoy es " + dia_semana + ", " + dia_mes + " de " + mesNom + " de " + año);
+        }
+
+        oFecha.actualizarFecha() = function () {
+            oFecha.diaMes = oFecha.getDate();
+            oFecha.diaSemana = oFecha.getDay();
+            ofecha.mesNum = oFecha.getMonth();
+            oFecha.mesNom = oFecha.getMonth();
+        }
+
+
+
+    </script>
+
+
+</body>
+<a href="index.html" class="button">Volver</a>
+
+</html>

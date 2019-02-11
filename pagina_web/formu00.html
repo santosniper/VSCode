@@ -1,24 +1,3 @@
-<!--
-Realiza una página que contenga un formulario de inscripción como el que 
-figura en la imagen (no hace falta que sea idéntico).
-
-En este se comprobará los datos obligatorios (con *) al abandonar el foco
-marcándo los bordes en rojo de estar vacio.
- 
-Cuando se pulse al botón "enviar" se comprobará (si el campo esta cumplimentado) que el DNI corresponde con la letra.
-
-Se comprobará que el teléfono es correcto (tiene 9 cifras).
-
-Se comprobará que el correo electrónico se escribió correctamente
-(en los dos campos se escribió igual y que lleva una @).
-
-Al seleccionar la Provincia (Alicante, Castellón, Valencia)
-se mostrarán las localidades correspondientes en la select localidad.
-(Si seleccionamos Valencia que aparezcan Requena, Quart de Poblet,
-Alboraia, etc. Si seleccionamos Castellón, que aparezca Villareal,
-Oropesa y Peñiscola, por ejemplo). 
--->
-
 <!DOCTYPE html>
 <html>
 
@@ -53,10 +32,13 @@ Oropesa y Peñiscola, por ejemplo).
             Correo electrónico<input type="text" name="correo" id="correo" value=""><br>
             Repita su correo electrónico<input type="text" name="correo2" value=""><br>
             <p>(*)Datos obligatorios</p>
-            <button type="submit" value="enviar" id="boton">Enviar los datos</button><button type="reset" value="limpiar">Empezar
+            <button type="submit" value="enviar" id="boton">Enviar los datos</button><button type="reset"
+                value="limpiar">Empezar
                 de
                 nuevo</button>
         </form>
+        <a href="index.html" class="button">Volver</a>
+
     </div>
 </body>
 <link rel="stylesheet" type="text/css" media="screen" href="css/form00.css" />

@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+$list: (red yellow purple);
+   @mixin classes{
+    height: 200px;
+    transition: height 1s ease;
+       
+   }
+@each $item in $list {
+    .#{$item} {
+    background: $item;
+    @include classes();
+    }
+   }
+
+.navbar{
+    transition: background-color 1s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
